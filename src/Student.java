@@ -12,6 +12,7 @@ public class Student {
         this.setLeeftijd(leeftijd);
     }
 
+
     public String getNaam() {
         return naam;
     }
@@ -21,11 +22,10 @@ public class Student {
     }
 
     /**
-     * @param leeftijd toegestaan tussen 0 en 120. Default is -1;
+     * @param leeftijd toegestaan tussen 0 en 120.
      */
     public void setLeeftijd(int leeftijd) {
-        this.leeftijd = -1;
-        if(leeftijd > 0 && leeftijd <120){
+        if (leeftijd > this.leeftijd && leeftijd < 150) {
             this.leeftijd = leeftijd;
         }
     }
