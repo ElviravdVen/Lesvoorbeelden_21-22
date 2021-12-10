@@ -11,11 +11,18 @@ public class App {
         Student ard = new Student("Ard", 5);
         Student marijn = new Student("Marijn", 17);
 
+        ard.setNext(marijn);
+        marijn.setNext(ard);
+
         ard.print();
         System.out.println(marijn.toString());
 
-        ard.setLeeftijd(17);
+        ard.setLeeftijd(23);
 
         ard.print();
+
+
+        ard.print();
+        marijn.print();
     }
 }

@@ -6,12 +6,22 @@
 public class Student {
     private String naam;
     private int leeftijd;
+    private Student next;
 
     public Student(String naam, int leeftijd) {
         this.naam = naam;
         this.setLeeftijd(leeftijd);
+        this.next = null;
     }
 
+
+    public Student getNext() {
+        return next;
+    }
+
+    public void setNext(Student next) {
+        this.next = next;
+    }
 
     public String getNaam() {
         return naam;
@@ -37,8 +47,9 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" +
-                "naam = '" + naam + '\'' +
-                ", leeftijd = " + leeftijd +
+                "naam='" + naam + '\'' +
+                ", leeftijd=" + leeftijd +
+                ", next=" + next.naam +
                 '}';
     }
 }
