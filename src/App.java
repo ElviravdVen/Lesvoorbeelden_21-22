@@ -20,7 +20,7 @@ public class App {
         ard.setLeeftijd(23);
 
         ard.print();
-
+€
 
         ard.print();
         marijn.print();
