@@ -12,7 +12,7 @@ public class App {
         Student marijn = new Student("Marijn", 17);
 
         ard.setNext(marijn);
-        marijn.setNext(ard);
+//        marijn.setNext(ard);
 
         ard.print();
         System.out.println(marijn.toString());
@@ -20,7 +20,7 @@ public class App {
         ard.setLeeftijd(23);
 
         ard.print();
-€
+
 
         ard.print();
         marijn.print();

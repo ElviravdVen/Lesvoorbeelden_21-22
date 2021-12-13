@@ -44,12 +44,16 @@ public class Student {
         System.out.println(this.toString());
     }
 
+    private boolean hasNext(){
+        return this.next != null;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
-                "naam='" + naam + '\'' +
-                ", leeftijd=" + leeftijd +
-                ", next=" + next.naam +
+                "naam = '" + naam + '\'' +
+                ", leeftijd = " + leeftijd +
+                ", next = " + (this.hasNext() ? "" + next.naam : " null") +
                 '}';
     }
 }
